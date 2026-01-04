@@ -6,9 +6,9 @@ __pycache__/
 env/
 venv/
 
-# Data (Too large for git)
-train/
-test/
+# Data (Now included)
+# train/
+# test/
 
 # Results & Intermediate Files
 result.csv

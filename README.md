@@ -13,8 +13,7 @@ This project implements a multi-class classification model to identify writers b
 *   `train.py`: Main script to train the model using Transfer Learning (MobileNetV2).
 *   **`run.py`**: Deployment script for inference. Extracts patches and uses a **Voting Mechanism** to identify writers.
 *   `model.keras`: The trained Deep Learning model.
-*   `project_report.md`: Detailed summary of the methodology and results.
-*   `presentation_slides.md`: Slides used for the video presentation.
+*   *(Dataset folders `train/` and `test/` included)*
 
 ## 🚀 How to Run
 
