@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+
+# Data (Too large for git)
+train/
+test/
+
+# Results & Intermediate Files
+result.csv
+result_improved.csv
+*.keras
+!model.keras  # Exception: We DO want to track the final model
+*.h5
+*.ckpt
+
+# Artifacts & Logs
+task.md
+*.log
+
+# OS generated
+.DS_Store
+Thumbs.db
