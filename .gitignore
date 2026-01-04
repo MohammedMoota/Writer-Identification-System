@@ -10,9 +10,7 @@ venv/
 # train/
 # test/
 
-# Results & Intermediate Files
-result.csv
-result_improved.csv
+# Intermediate Files
 *.keras
 !model.keras  # Exception: We DO want to track the final model
 *.h5
