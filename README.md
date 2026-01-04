@@ -1,4 +1,4 @@
-# Writer Identification System ✍️🔍
+# Writer Identification System
 
 An efficient, CPU-friendly Deep Learning system for identifying writers from handwritten documents. Developed for the Global Intelligence Authority (GIA) forensic analysis.
 
@@ -6,16 +6,16 @@ An efficient, CPU-friendly Deep Learning system for identifying writers from han
 ![Platform](https://img.shields.io/badge/Platform-CPU-blue)
 ![Model](https://img.shields.io/badge/Model-MobileNetV2-orange)
 
-## 📌 Project Overview
+##  Project Overview
 This project implements a multi-class classification model to identify writers based on the stylistic features of their handwriting (slant, pressure, curvature) rather than the text content. It is designed to run on standard hardware (CPU) without requiring a GPU, making it suitable for portable forensic deployment.
 
-## 📂 Project Structure
+##  Project Structure
 *   `train.py`: Main script to train the model using Transfer Learning (MobileNetV2).
 *   **`run.py`**: Deployment script for inference. Extracts patches and uses a **Voting Mechanism** to identify writers.
 *   `model.keras`: The trained Deep Learning model.
 *   *(Dataset folders `train/` and `test/` included)*
 
-## 🚀 How to Run
+##  How to Run
 
 ### 1. Setup
 Install requirements:
@@ -40,15 +40,14 @@ To retrain the model from scratch:
 python train.py
 ```
 
-## 🧠 Methodology
+##  Methodology
 *   **Preprocessing**: Grayscale conversion, CLAHE contrast enhancement, and 300x300 patch extraction.
 *   **Model**: **MobileNetV2** (Transfer Learning) with a custom classification head.
 *   **Feature Engineering**: A "Bag-of-Features" approach where 35 randomly sampled patches from a page vote on the writer's identity.
 
-## 📊 Results
+##  Results
 *   **Test Accuracy**: **82.86%**
 *   **Inference Speed**: ~0.8s per image (CPU)
 
 ## 👤 Author
 **Mohammed Moota**
-[GitHub Profile](https://github.com/MohammedMoota)
